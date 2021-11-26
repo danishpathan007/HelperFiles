@@ -28,7 +28,7 @@ class Speciality: NSObject,Mappable,DataModel,NSCoding{
         coder.encode(pivot, forKey: "pivot")
     }
 }
-
+========================>>>>>>>>>>>>>> USE <<<<<<<<<<<<<<===========================
  let msg = json["message"].stringValue
  let isSuccess = json["status_code"]
   if isSuccess == 200 {
