@@ -1,7 +1,11 @@
 
 ///-----------------------------------------------------------------------------------------------
-//  Created by Aya Baghdadi.
-//  Copyright © 2021 Technicalisto . All rights reserved.
+var getImage : Data = Data()
+let pickedImage:UIImage = info[UIImagePickerController.InfoKey.editedImage] as! UIImage
+
+pickedImage.resizeByByte(maxByte: 300000, completion: { (getImages) in
+    getImage = getImages
+})
 ///-----------------------------------------------------------------------------------------------
 import Foundation
 import UIKit
